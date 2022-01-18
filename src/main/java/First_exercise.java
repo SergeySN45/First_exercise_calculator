@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /**
+ * Simple calculator
  * @author SNesterov
  */
 
@@ -52,7 +53,7 @@ public class First_exercise {
      * @param b second argument of statement
      * @return subtraction a and b
      */
-    private static final float sub(float a, float b) {
+    private static float sub(float a, float b) {
         return a - b;
     }
 
@@ -62,7 +63,7 @@ public class First_exercise {
      * @param b second argument of statement
      * @return addition a and b
      */
-    private static final float add(float a, float b) {
+    private static float add(float a, float b) {
         return a + b;
     }
 
@@ -72,7 +73,7 @@ public class First_exercise {
      * @param b second argument of statement
      * @return division a and b
      */
-    private static final float div(float a, float b) {
+    private static float div(float a, float b) {
         return a / b;
     }
 
@@ -82,7 +83,7 @@ public class First_exercise {
      * @param b second argument of statement
      * @return multiplication a and b
      */
-    private static final float mult(float a, float b) {
+    private static float mult(float a, float b) {
         return a * b;
     }
 }
