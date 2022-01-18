@@ -17,31 +17,33 @@ public class First_exercise {
         System.out.println("Choose operation (1 - add, 2 - sub, 3 - div, 4 - mult):");
         int operation = scanner.nextInt();
 
-        System.out.println("Enter first number:");
-        float firstComponent = scanner.nextFloat();
+        if ((operation < 1) || (operation > 4)) {
+            System.out.println("You have chosen the wrong operation");
+        } else {
+            System.out.println("Enter first number:");
+            float firstComponent = scanner.nextFloat();
 
-        System.out.println("Enter second number:");
-        float secondComponent = scanner.nextFloat();
+            System.out.println("Enter second number:");
+            float secondComponent = scanner.nextFloat();
 
-        switch (operation) {
-            case 1:
-                System.out.print("The result of addition is ");
-                System.out.printf("%.4f", add(firstComponent, secondComponent));
-                break;
-            case 2:
-                System.out.print("The result of subtraction is ");
-                System.out.printf("%.4f", sub(firstComponent, secondComponent));
-                break;
-            case 3:
-                System.out.print("The result of division is ");
-                System.out.printf("%.4f", div(firstComponent, secondComponent));
-                break;
-            case 4:
-                System.out.print("The result of multiplication is ");
-                System.out.printf("%.4f", mult(firstComponent, secondComponent));
-                break;
-            default:
-                System.out.println("You have chosen the wrong operation");
+            switch (operation) {
+                case 1:
+                    System.out.print("The result of addition is ");
+                    System.out.printf("%.4f", add(firstComponent, secondComponent));
+                    break;
+                case 2:
+                    System.out.print("The result of subtraction is ");
+                    System.out.printf("%.4f", sub(firstComponent, secondComponent));
+                    break;
+                case 3:
+                    System.out.print("The result of division is ");
+                    System.out.printf("%.4f", div(firstComponent, secondComponent));
+                    break;
+                case 4:
+                    System.out.print("The result of multiplication is ");
+                    System.out.printf("%.4f", mult(firstComponent, secondComponent));
+                    break;
+            }
         }
 
         scanner.close();
