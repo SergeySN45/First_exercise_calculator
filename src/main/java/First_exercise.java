@@ -18,9 +18,6 @@ public class First_exercise {
 
         System.out.println("Choose action (1 - simpleCalculator, 2 - The longest word in array):");
         int action = inputInt(scanner);
-        if ((action < 1) || (action > 2)) {
-            System.out.println("You have chosen the wrong action");
-        } else {
             switch (action) {
                 case 1:
                     simpleCalculator(scanner);
@@ -28,8 +25,9 @@ public class First_exercise {
                 case 2:
                     longestWordInArray(scanner);
                     break;
+                default:
+                    System.out.println("You have chosen the wrong action");
             }
-        }
         scanner.close();
     }
 
