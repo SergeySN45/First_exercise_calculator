@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Simple calculator
+ * Simple calculator and search for the longest word in an array
  * @author SNesterov
  * @version 0.2
  */
@@ -13,7 +13,6 @@ public class First_exercise {
      * @param args input parameters
      */
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Choose action (1 - simpleCalculator, 2 - The longest word in array):");
